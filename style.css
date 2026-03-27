@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
+    color: #222;
+}
+
+.flex-container nav > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 24px;
+}
+
+.header-left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    height: 32px;
+    margin: 0 24px;
+    gap: 8px;
+}
+
+.hearder-left img {
+    width: auto;
+    height: 32px;
+}
+
+.header-right ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* .head-right-mobile{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: right;
+    align-items: center;
+    width: 320px;
+    height: 32px;
+    margin: 0 24px;
+    gap: 16px;
+} */
+
+.Hero >div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background-color: #dedddd;
+    padding: 32px 24px;
+}
+
+.banner{
+    width: 60%;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.Heroword {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 16px;
+    color: #333;
+}
+
+.Heroword p:first-child {
+    font-size: 48px;
+    font-weight: 800;
+    color: #2f2f2f;
+}
+
+.Heroword p:nth-child(2) {
+    font-size: 18px;
+    color: #555;
+}
+
+.button {
+    margin-top: 12px;
+}
+
+.button a {
+    display: inline-block;
+    padding: 12px 26px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.information > div {
+    display: flex;
+    gap: 24px;
+    margin: 32px 24px;
+}
+
+.info-main{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 16px;
+}
+
+.info-main img{
+    width: 100%;
+    height: auto;
+}
+
+.info-main h3 {
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.info-main p {
+    font-size: 18px;
+    color: #555;
+}
+
+.info-main p:last-child {
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 40%;
+}
+
+.info > div {
+  display: flex;
+  gap: 16px;
+  background: #f5f5f5;
+  padding: 16px;
+  align-items: center;
+}
+
+.info > div img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.detail p strong {
+    font-size: 20px;
+}
+
+.detail a {
+  color: #0078ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .flex-container nav > div {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .Hero > div {
+        flex-direction: column;
+    }
+
+    .banner,
+    .Heroword,
+    .info-main,
+    .info {
+        width: 100%;
+    }
+
+    .information > div {
+        flex-direction: column;
+        margin: 16px;
+    }
+
+    .info > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info > div img {
+        width: 100%;
+    }
+}
